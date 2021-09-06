@@ -7,6 +7,6 @@ tip_percentage = float(input("How much would you like to tip? 5%, 10% or 15% ? "
 tip_percentage /= 100   # convert to decimal
 tip_amount = bill_total * tip_percentage    # get the new total with tip included
 total = bill_total + tip_amount # add tip to the bill total
-bill_split = total / split  # split the bill
+bill_split = round(total / split , 2)   # split the bill -> rounded to 2 decimal places
 
 print("-------   ------\nBill total (incl. tip): R",total,"\nEach person pays: R",bill_split)

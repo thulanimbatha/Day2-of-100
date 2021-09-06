@@ -9,4 +9,4 @@ tip_amount = bill_total * tip_percentage    # get the new total with tip include
 total = bill_total + tip_amount # add tip to the bill total
 bill_split = round(total / split , 2)   # split the bill -> rounded to 2 decimal places
 
-print("-------   ------\nBill total (incl. tip): R",total,"\nEach person pays: R",bill_split)
+print(f"-------   ------\nBill total (incl. tip): R{total}\nEach person pays: R{bill_split}")
